@@ -42,9 +42,6 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run:
-          name: setup dotenv
-          command: sh createenvfile.sh  
       # try build
       - run: 
           name: Build Project
